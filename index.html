@@ -1,0 +1,48 @@
+<head><style>
+body{
+    background: #069cff;
+}
+div{
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /* background: #ff0; */
+    text-align: center;
+}
+p{
+    text-decoration-color: aliceblue;
+}
+a:link {
+  color: rgb(255, 255, 255);
+  background-color: transparent;
+  text-decoration: none;
+}   
+button{
+    color: rgb(255, 255, 255);
+    background: #0048ff; 
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    
+}
+#move{
+    position: relative;
+}
+</style></head>
+<script>
+function runaway(id) {
+    id.style.top = Math.round(Math.random() * 250) - 100 + 'px';
+    id.style.left = Math.round(Math.random() * 250) - 200 + 'px';
+}
+</script>
+<div style = "position:absolute; top:-300px;">
+    <p><h1><font color="#FFFFFF">Do you wanna go out with me ?</font></h1></p>
+    <img src="https://gifdb.com/images/high/munchkin-cat-please-cufrw80ux14oacc2.webp" width="240" height="250" class="center"/>
+    <p><a href="https://media.tenor.com/scya8H9g09cAAAAi/peach-goma.gif"><button><b>YES</b></button></a>
+        <button id="move" onmouseover="runaway(this)"><b>NO<FFFFFF/b></button>
+</div>
